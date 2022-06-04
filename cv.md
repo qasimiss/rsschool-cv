@@ -28,7 +28,6 @@ sum( 2, 5 );
 result = sum;
 alert( result );
 ```
-***
 ## **Work Experience**
 I'm working in a small Web studio on small projects.
 ## **Education**
