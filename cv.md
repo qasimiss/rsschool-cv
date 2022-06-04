@@ -1,4 +1,4 @@
-[rsschool-cv](https://github.com/qasimiss/rsschool-cv)
+# [rsschool-cv](https://qasimiss.github.io/rsschool-cv/cv)
 
 # **German Vengerov**
 ***
