@@ -92,7 +92,7 @@ h2 {
     bottom:15%;
     right:0%;
 }
-/* .about {
+.about {
     display:flex;
     justify-content:space-between;
     flex-wrap: wrap;
@@ -286,7 +286,7 @@ a {
     left:0px;
     top: 0px;
 }
-.footer .container {
+/* .footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -308,4 +308,4 @@ a {
 }
 .footer-link {
     color: white;
-} */
+} */ 
