@@ -38,8 +38,10 @@ main {
     max-width: 1080px;
     position: relative;
 }
-.article {
-    display: flex;
+.about {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
 }
 .header-nav {
     position: absolute;
@@ -91,11 +93,6 @@ h2 {
     position: absolute;
     bottom:15%;
     right:0%;
-}
-.about {
-    display:flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
 }
 .cont, .prof, .s-skills, .educ {
     width: 30%;
