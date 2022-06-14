@@ -286,7 +286,7 @@ a {
     left:0px;
     top: 0px;
 }
-/* .footer .container {
+.footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -308,4 +308,4 @@ a {
 }
 .footer-link {
     color: white;
-} */ 
+}
