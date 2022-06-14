@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: bold;
+    font-weight: 700;
+    src: "fonts/Montserrat-Black.otf";
+    font-display: swap;
+}
+@font-face {
+    font-family: "Raleway";
+    font-style: bold;
+    font-weight: 700;
+    src: "fonts/Raleway-Bold.ttf";
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: lighter;
+    font-weight: 300;
+    src: "fonts/Raleway-Light.ttf";
+    font-display: swap;
+}
+* {
+    margin:0;
+    padding:0;
+}
+header {
+    height: 450px;
+    background: rgb(33, 33, 33);
+    position: relative;
+    padding: 25px 50px 0 50px;
+    box-sizing: border-box;
+}
+main {
+    background: rgb(255, 255, 255);
+}
+.container {
+    margin:0 auto;
+    max-width: 1080px;
+    position: relative;
+}
+.article {
+    display: flex;
+}
+.header-nav {
+    position: absolute;
+    bottom:0;
+    right:0;
+    font-family:"Raleway" ;
+    font-weight: 300;
+    font-size: 16px;
+}
+h1 {
+    color: white;
+    font-family: "Montserrat" ;
+    font-weight: 700;
+    font-size: 96px;
+    text-align: center;
+    position: relative;
+    left:-30%;
+}
+h2 {
+    color: white;
+    font-family: "Montserrat" ;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    left:-30%;
+}
+.header-link {
+    text-decoration: none;
+    color: white;
+    font-family: serif;
+}
+.header-link:hover {
+    color: rgb(33, 33, 33);
+    background-color: white;
+}
+
+.header-item {
+    color: white;
+    list-style: none;
+    display: inline-block;
+    border: 1px solid white;
+}
+.avatar {
+    background: url("../img/photo_cv.jpg") center center no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: 100%;
+    position: absolute;
+    bottom:15%;
+    right:0%;
+}
+/* body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(66, 66, 66) 0 0 repeat;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    background: rgb(224, 224, 224) 0 0 repeat;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+} */
+.about {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.cont, .prof, .s-skills, .educ {
+    width: 30%;
+}
+.code-exmpl, .work-exp, .h-skills, .languages {
+    width: 60%;
+}
+.cont {
+    position:relative;
+}
+.title {
+    width: 324px;
+    height: 20px;
+    color: white;
+    background-color: rgb(33, 33, 33);
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 5px;
+    font-family:"Montserrat" ;
+    font-weight: 700;
+    letter-spacing:5px;
+    margin-bottom: 15px;
+}
+.title_right {
+    width: 640px;
+}
+.subtitle {
+    color: rgb(33, 33, 33);
+    font-family: "Montserrat";
+    font-size: 24px;
+    padding: 10px 10px 10px 0;
+    font-weight: 300;
+}
+.subtitle_cont {
+    padding-left: 40px;
+}
+.mail::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../icons/mail.svg);
+    top: 75px;
+    left:0;
+}
+.tel::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../icons/phone.svg);
+    top: 125px;
+    left:0;
+}
+.tg::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../icons/telegram.svg);
+    top: 170px;
+    left:0;
+    background-position: 50% 50%;
+    background-size:100%;
+}
+.discord::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../icons/discord.svg);
+    top: 220px;
+    left:0;
+    background-position: 50% 50%;
+    background-size:100%;
+}
+.github::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../icons/github.svg);
+    top: 265px;
+    left:0;
+    background-position: 50% 50%;
+    background-size:100%;
+}
+.map::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(../icons/location.svg);
+    top: 310px;
+    left:0;
+    background-position: 50% 50%;
+    background-size:100%;
+}
+a {
+    color:rgb(33, 33, 33);
+    text-decoration: none;
+}
+.code-exmpl .subtitle {
+    margin-top: 90px;
+}
+.work-exp .subtitle {
+    margin-top: 120px;
+}
+.s-skills-list {
+    margin-top: 40px;
+    list-style: square;
+    padding-left:20px;
+}
+.s-skills-list li {
+    margin-bottom: 15px;
+}
+.s-skills-list li:hover {
+    transform: translateX(20px);
+    cursor:pointer;
+    list-style: none;
+}
+.h-skills-list {
+    list-style: none;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hsl {
+    background-color: rgb(120, 120, 120);
+    padding: 1%;
+    text-align: right;
+}
+.hsl-html {
+    width: 98%;
+    background-color: rgb(33, 33, 33);
+}
+.hsl-css {
+    width: 60%;
+    background-color: rgb(33, 33, 33);
+}
+.hsl-js {
+    width: 70%;
+    background-color: rgb(33, 33, 33);
+}
+.hsl-git {
+    width: 80%;
+    background-color: rgb(33, 33, 33);
+}
+.languages__list {
+    margin-top: 80px;
+    list-style:none;
+}
+.language__item {
+    position: relative;
+    padding-left: 40px
+}
+.language__item::before {
+    background: url(../icons/speaking.png) 50% 50% no-repeat;
+    content:"";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-size: 100%;
+    left:0px;
+    top: 14px;
+}
+.languages {
+    margin-bottom: 20px;
+}
+.educ__list {
+    list-style: none;
+}
+.educ__item {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+}
+.main {
+    font-weight: 700;
+}
+.educ__item::before {
+    background: url(../icons/educ.png) 50% 50% no-repeat;
+    content:"";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 100%;
+    left:0px;
+    top: 0px;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-Rsschool {
+    width: 100px;
+    height: auto;
+    background-color:white;
+}
+.foo {
+    color: white;
+    background-color: rgb(33, 33, 33);
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 5px;
+    font-family:"Montserrat" ;
+    font-weight: 700;
+    letter-spacing:5px;
+}
+.footer-link {
+    color: white;
+}
