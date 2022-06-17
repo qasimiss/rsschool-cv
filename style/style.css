@@ -33,6 +33,16 @@ header {
 main {
     background: rgb(255, 255, 255);
 }
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:block;
+}
 .container {
     margin:0 auto;
     max-width: 1080px;
@@ -58,7 +68,7 @@ h1 {
     position: relative;
     left:-30%;
 }
-h2 {
+.role {
     color: white;
     font-family: "Montserrat" ;
     font-weight: 300;
@@ -92,36 +102,6 @@ h2 {
     bottom:15%;
     right:0%;
 }
-/* body::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: rgb(66, 66, 66) 0 0 repeat;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-body::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    background: rgb(224, 224, 224) 0 0 repeat;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-} */
 .about {
     display:flex;
     justify-content:space-between;
@@ -167,7 +147,7 @@ body::after {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: url(../icons/mail.svg);
+    background: url("../icons/mail.svg");
     top: 75px;
     left:0;
 }
@@ -176,7 +156,7 @@ body::after {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: url(../icons/phone.svg);
+    background: url("../icons/phone.svg");
     top: 125px;
     left:0;
 }
@@ -185,7 +165,7 @@ body::after {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: url(../icons/telegram.svg);
+    background: url("../icons/telegram.svg");
     top: 170px;
     left:0;
     background-position: 50% 50%;
@@ -196,7 +176,7 @@ body::after {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: url(../icons/discord.svg);
+    background: url("../icons/discord.svg");
     top: 220px;
     left:0;
     background-position: 50% 50%;
@@ -207,7 +187,7 @@ body::after {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: url(../icons/github.svg);
+    background: url("../icons/github.svg");
     top: 265px;
     left:0;
     background-position: 50% 50%;
@@ -218,7 +198,7 @@ body::after {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: url(../icons/location.svg);
+    background: url("../icons/location.svg");
     top: 310px;
     left:0;
     background-position: 50% 50%;
@@ -231,8 +211,15 @@ a {
 .code-exmpl .subtitle {
     margin-top: 90px;
 }
+.work-exp {
+    position:relative;
+}
 .work-exp .subtitle {
-    margin-top: 120px;
+    margin-top: 80px;
+}
+a.img_wrap {
+    display: block;
+    margin-left:calc(50% - 104px);
 }
 .s-skills-list {
     margin-top: 40px;
